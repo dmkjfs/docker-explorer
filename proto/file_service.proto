@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "proto;proto";
+
+service FileService {
+  rpc Read (ReadRequest) returns (ReadResponse);
+  rpc Write (WriteRequest) returns (WriteResponse);
+  rpc Delete (DeleteRequest) returns (DeleteResponse);
+  rpc List (ListRequest) returns (ListResponse);
+}
+
+message ReadRequest {
+  string path = 1;
+}
+
+message ReadResponse {
+  bytes content = 1;
+}
+
+message WriteRequest {
+  string path = 1;
+  bytes content = 4;
+}
+
+message WriteResponse {
+  bool success = 1;
+}
+
+message DeleteRequest {
+  string path = 1;
+}
+
+message DeleteResponse {
+  bool success = 1;
+}
+
+message ListRequest {
+  string path = 1;
+}
+
+message ListResponse {
+  repeated string items = 1;
+}
