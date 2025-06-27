@@ -38,3 +38,7 @@ services:
             # without opening the port locally
             - some_network 
 ```
+
+🗒️ Specification
+
+See full specification for unary server requests&responses in [file_service.proto](https://github.com/dmkjfs/docker-explorer/blob/main/proto/file_service.proto)
