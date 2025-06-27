@@ -1,7 +1,5 @@
 build:
 	go mod download
-	rm -rf proto/*.go
-	protoc --go_out=. --go-grpc_out=. proto/file_service.proto
 	CGO_ENABLED=0 go build -o docker_explorer ./cmd/server
 	docker build -t docker-explorer .
 

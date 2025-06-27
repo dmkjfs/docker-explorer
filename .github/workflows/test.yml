@@ -12,7 +12,5 @@ jobs:
           with:
             go-version: '^1.24.0'
         - run: go mod tidy
-        - run: go mod download
-        - run: protoc --go_out=. --go-grpc_out=. proto/file_service.proto
         - run: go get -u ./...
         - run: go test ./... -v
