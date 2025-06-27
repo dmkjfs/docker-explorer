@@ -3,7 +3,7 @@
 <div>
   <a href="https://github.com/dmkjfs/docker-explorer/stargazers/"><img src="https://img.shields.io/github/stars/dmkjfs/docker-explorer?style=flat-square&label=stars&color=blue"></a>
   <a href="https://github.com/dmkjfs/docker-explorer/forks/"><img src="https://img.shields.io/github/forks/dmkjfs/docker-explorer?style=flat-square&label=forks&color=blue"></a>
-  <a href="https://github.com/dmkjfs/docker-explorer/actions/workflows/check.yaml/"><img src="https://img.shields.io/github/actions/workflow/status/dmkjfs/docker-explorer/check.yaml?branch=dev&style=flat-square&label=tests&color=blue"></a>
+  <a href="https://github.com/dmkjfs/docker-explorer/actions/workflows/test.yml/"><img src="https://img.shields.io/github/actions/workflow/status/dmkjfs/docker-explorer/test.yml?branch=main&style=flat-square&label=tests&color=blue"></a>
 </div>
 
 
